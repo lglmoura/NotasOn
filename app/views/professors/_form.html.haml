@@ -1,0 +1,12 @@
+= simple_form_for(@professor) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :matricula
+    = f.input :nome
+    = f.input :endereco, label: "Endereço"
+    = f.input :telefone
+    = f.input :senha
+
+  .form-actions
+    = f.submit "Salvar"
