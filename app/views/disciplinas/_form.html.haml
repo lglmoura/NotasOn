@@ -1,0 +1,11 @@
+= simple_form_for(@disciplina) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :codigo, label: "Código"
+    = f.input :nome
+    = f.input :carga
+    = f.association :professor, label_method: :nome
+
+  .form-actions
+    = f.submit 'Salvar'

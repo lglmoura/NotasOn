@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Código:
+  = @disciplina.codigo
+%p
+  %b Nome:
+  = @disciplina.nome
+%p
+  %b Carga:
+  = @disciplina.carga
+%p
+  %b Professor:
+  = @disciplina.professor.nome
+
+= link_to 'Edit', edit_disciplina_path(@disciplina)
+\|
+= link_to 'Back', disciplinas_path
